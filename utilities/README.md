@@ -6,6 +6,7 @@ Thank you for your help in uploading data as part of this project! Please see th
 1. Prepare data to be uploaded under `./data` directory relative to `gsutil_sync.bat` location.
 1. Run the `gsutil_sync.bat` script by double clicking it or from a command line prompt (for example, by typing: `gsutil_sync.bat` and hitting the enter key).
 
+
 Please reference the following directory tree structure for an example of what the path should contain:
 
 ```shell
