@@ -1,7 +1,7 @@
 ::  This file automates how data are sync'd to a
 ::  Google Cloud Cloud Storage bucket using a
 ::  pre-existing service account key.
-:: 
+::
 ::  Notes:
 ::  ----------------------------------------------------
 ::  presumes gsutil has already been installed and is
