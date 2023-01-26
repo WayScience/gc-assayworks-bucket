@@ -1,4 +1,4 @@
-# Template: Google Cloud - Cloud Storage Bucket
+# Google Cloud (GC) Assay.Works Cloud Storage Bucket
 
 ```mermaid
 flowchart LR
@@ -7,7 +7,7 @@ flowchart LR
 
 ```
 
-Template for creating [Cloud Storage](https://cloud.google.com/storage/) bucket on [Google Cloud](https://cloud.google.com/) with a service account and related key to enable data or file upload and use.
+Used for creating [Cloud Storage](https://cloud.google.com/storage/) bucket on [Google Cloud](https://cloud.google.com/) with a service account and related key to enable data or file upload and use.
 
 This repository uses [Terraform](https://developer.hashicorp.com/terraform/intro) to maintain cloud resources. See [terraform/README.md](terraform/README.md) for documentation on Terraform elements.
 

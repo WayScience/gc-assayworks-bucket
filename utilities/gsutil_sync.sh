@@ -21,4 +21,4 @@ gcloud auth activate-service-account --key-file=./service-account.json
 # to bucket lab-initiative-bucket
 # see the following for more details:
 # https://cloud.google.com/storage/docs/gsutil/commands/rsync
-gsutil rsync ./data gs://waylab-assayworks-bucket
+gsutil rsync <source data> gs://waylab-assayworks-bucket
