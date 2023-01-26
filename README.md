@@ -11,6 +11,13 @@ Used for creating [Cloud Storage](https://cloud.google.com/storage/) bucket on [
 
 This repository uses [Terraform](https://developer.hashicorp.com/terraform/intro) to maintain cloud resources. See [terraform/README.md](terraform/README.md) for documentation on Terraform elements.
 
+## 👥 Roles
+
+See below for an overview of roles which are important to context for various parts of this repository.
+
+- __Terraform Administrator__: this role involves administrating over cloud resources created with Terraform. Content found under the `terraform` directory and following steps under [Tutorial: Bucket Infrastructure](#bucket-infrastructure) apply to this role.
+- __Assay.Works Data Provider__: this role involves using content under `utilties` to synchronize (add, update, or remove) data to the bucket created by a Terraform Administrator. Instructions specific to this role are provided under [`utilities/README.md`](utilities/README.md).
+
 ## 🛠️ Install
 
 See below for steps which are required for installation.
@@ -50,9 +57,8 @@ These steps cover an example of how to use the bucket with an example [gsutil](h
 |-----------------------------------------|
 
 1. Change directory into `./utilities`
-1. Rename `example_gsutil_sync.sh` to `gsutil_sync.sh`
 1. Ensure `service-account.json` key is found within `./utilities` directory (becomes available after infrastructure steps are taken with Terraform).
-1. Make changes to `gsutil rsync ...` line to specify the local data location and the target bucket. The target bucket name should be available within `terraform/variables.tf`.
+1. Make changes to `gsutil rsync ...` line to specify the local data location and the target bucket.
 1. Run the `gsutil_sync.sh` script (for example: `sh ./gsutil_sync.sh`).
 
 ## 🧑‍💻 Development
