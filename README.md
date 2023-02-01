@@ -5,7 +5,7 @@ flowchart LR
     subgraph upload
       files[("file(s)")]
       assayworks["👤 Assay.Works"]
-      
+
     end
     subgraph download
       waylab["👤 Way Lab"]
