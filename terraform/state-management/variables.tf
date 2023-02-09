@@ -12,7 +12,7 @@ variable "region" {
 # Name for the bucket being created
 variable "bucket_name" {
   type    = string
-  default = "lab-initiative-bucket-state-management"
+  default = "waylab-assayworks-bucket-state-mgmt"
 }
 # Label for specific initiative
 # useful for differentiating between
