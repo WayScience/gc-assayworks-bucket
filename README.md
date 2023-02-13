@@ -47,9 +47,8 @@ See below for brief tutorials on how to implement the work found in this reposit
 
 ### 🎛️ State Management
 
-These steps cover how to store [Terraform state management](https://developer.hashicorp.com/terraform/language/state) files in association with the bucket infrastructure below.
-State management is used to share access to maintenance files required after resources are created by those in the role of Terraform Administrators.
-This repository assumes Terraform state is managed separately from other work within the same Google Cloud project.
+These steps cover how to store [Terraform state management](https://developer.hashicorp.com/terraform/language/state) files in association with the bucket infrastructure below. Terraform tracks cloud resources it creates as a statefile (`.tfstate`). If multiple people want to manage the same resources at the same time, they all need to have access to the same statefile or else they overwriting or corrupting state data. One option for sharing this statefile is to use a Google Cloud Bucket, which is the option used here.
+
 Note: Terraform cloud state management must be setup before it is referenced as a backend.
 
 1. Make adjustments to the content as necessary (for example, this readme file).
